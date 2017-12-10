@@ -1,23 +1,42 @@
----
-layout: default
----
+﻿<!-- 
+My own webpage
+Created by: Peter Onodi
+2016  
+-->
 
-<div class="home">
+<html>
+<head>
+<title>Péter Onódi's webpage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<link href="style.css" rel="stylesheet" type="text/css" /> 
+<link rel="shortcut icon" type="image/x-icon" href="pics/favicon/opicon.png" />
+ 
+</head>
+<body>
 
-  <h1 class="page-heading">Posts</h1>
+<div id="header"> 
+<a target="_blank" href="op.html"><img src="pics/op_round.png" width="120" height="120" alt="Ridiculously photogenic picture of me" hspace="120" vspace="40" align="left"/></a>
+<h1 id="title">Péter Onódi</h1>
+</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div id="centerdoc">
+<p id="introduction">
+I am a 23 years old vehicle engineer from Slovakia. I have studied on Budapest University of Technology and Economics. My main interests are aircraft design, flight dynamics, aircraft structures and UAV technology. 
+I spend my free time with jogging, reading books, watching films, building model airplanes and jogging. My newest hobby is gliding.
+</p>
+<p id="cv">
+Download my curriculum vitae:
+<ul>
+<li style="list-style-image: url(pics/flagicons/gb.png);"><a href="cv/Peter_Onodi_CV_EN.pdf">English CV</a></li>
+<li style="list-style-image: url(pics/flagicons/hu.png);"><a href="cv/Onodi_Peter_CV_HU.pdf">Hungarian CV</a></li>
+<li style="list-style-image: url(pics/flagicons/de.png);"><a href="cv/Peter_Onodi_CV_DE.pdf">German CV</a></li>
+<li style="list-style-image: url(pics/flagicons/sk.png);"><a href="cv/Peter_Onodi_CV_SK.pdf">Slovak CV</a></li>
+<li style="list-style-image: url(pics/flagicons/cz.png);"><a href="cv/Peter_Onodi_CV_CZ.pdf">Czech CV</a></li>
+<li style="list-style-image: url(pics/flagicons/nl.png);"><a href="cv/Peter_Onodi_CV_NL.pdf">Dutch CV</a></li>
+</ul>
+</p>
 
 </div>
+
+</body>
+</html>
