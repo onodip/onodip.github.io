@@ -125,6 +125,7 @@ a:active {
 	font-size: 72;
 	color: #CCCCCC;
 }
+#menu { position: absolute; z-index: 10;  height: 35px; width:100%; margin: 0; border-bottom: 5px solid #8696a8; font-weight: bold; font-size:18pt;  background-color:#FFFFFF; margin-top: 195px;} 
 
 /* Menu formatting */
 .menuitem { 
